@@ -188,7 +188,7 @@ def parse_data(df):
             extract_station_info(data, None, 'ActualShortenedStation')
 
 
-if __name__ == 'main':
+def parser():
     file_path = str(input('Enter the file path to store your data: '))  # specify the directory where the file will be stored
     file_name = str(input('Enter the file name of your data: '))  # specify the name of the file with out the type
 
