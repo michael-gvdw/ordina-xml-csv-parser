@@ -5,9 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ordina-xml-csv-parser", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Michael Groenewegen van der Weijden, Mihail Bondarenco, Rostislav Ivanov",
     author_email="",
+    license='MIT',
     description="Parse puplic dvs data for ordina school project",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,4 +24,8 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.8",
+    install_requires=[
+        "pandas==1.2.3",
+        "numpy==1.20.1",
+    ]
 )
